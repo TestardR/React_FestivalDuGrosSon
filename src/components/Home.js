@@ -1,17 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import MediaQuery from 'react-responsive';
+
+import HomeVideo from './HomeVideo';
+import HomeImage from './HomeImage';
 
 class Home extends Component {
-  state = {
-    videoURL: '../static/videos/homepage_video.mp4'
-  };
-
   render() {
     return (
-      <video id="background-video" loop autoPlay>
-        <source src={this.state.videoURL} type="video/mp4" />
-        <source src={this.state.videoURL} type="video/ogg" />
-        Your browser does not support the video tag.
-      </video>
+      <Fragment>
+        <MediaQuery query="(min-device-width: 769px)">
+          <HomeVideo />
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 768px)">
+          <HomeImage />
+        </MediaQuery>
+      </Fragment>
     );
   }
 }
