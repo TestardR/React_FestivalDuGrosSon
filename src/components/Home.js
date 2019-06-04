@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 
 import HomeVideo from './HomeVideo';
@@ -7,14 +7,14 @@ import HomeImage from './HomeImage';
 class Home extends Component {
   render() {
     return (
-      <Fragment>
+      <div>
         <MediaQuery query="(min-device-width: 769px)">
           <HomeVideo />
         </MediaQuery>
         <MediaQuery query="(max-device-width: 768px)">
           <HomeImage />
         </MediaQuery>
-      </Fragment>
+      </div>
     );
   }
 }
