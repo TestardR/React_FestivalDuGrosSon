@@ -25,15 +25,24 @@
   .title {
     font-family: 'Lobster' !important;
     font-size: 6rem;
+    @media only screen and (max-width: 768px) {
+      font-size: 2.33rem;
+    }
   }
   .edition {
     margin-top: 1rem;
     font-weight: bold;
-    font-size: 2.5rem !important;
+    font-size: 2.75rem !important;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.5rem !important;
+    }
   }
   .info {
     font-family: 'CreteRound', sans-serif;
     font-size: 1.75rem;
     line-height: 1.25;
+    @media only screen and (max-width: 768px) {
+      font-size: 1rem !important;
+    }
   }
 }
