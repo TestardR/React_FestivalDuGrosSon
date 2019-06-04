@@ -5,7 +5,7 @@ import Home from './components/Home';
 function App() {
   return (
     <Router>
-      <Route path="/home" exact component={Home} />
+      <Home>Hello World</Home>
     </Router>
   );
 }

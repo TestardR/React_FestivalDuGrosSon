@@ -1,3 +1,11 @@
+.homeImage {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
 .homeVideo {
   position: absolute;
   top: 0;
@@ -7,13 +15,11 @@
   overflow: hidden;
 }
 
-.homeImageWrapper {
-}
-
-.homeImage {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100vw;
-  height: 100vh;
+.homeLogo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 10%;
+  length: 10%;
+  transform: translate(-50%, -50%);
 }
