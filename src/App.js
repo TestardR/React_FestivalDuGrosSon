@@ -8,6 +8,7 @@ import Billeterie from './components/Billeterie';
 import Contact from './components/Contact';
 import Info from './components/Info';
 import Header from './components/layouts/Header';
+import Footer from './components/layouts/Footer';
 
 function App() {
   return (
