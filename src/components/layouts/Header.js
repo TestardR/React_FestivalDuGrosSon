@@ -33,25 +33,25 @@ class Header extends Component {
           onStateChange={state => this.handleStateChange(state)}
         >
           <Link className="menu-item" to="/" onClick={() => this.closeMenu()}>
-            Accueil
+            ACCUEIL
           </Link>
           <Link to="/lineup" onClick={() => this.closeMenu()}>
-            Line-Up
+            LINE-UP
           </Link>
           <Link to="/restauration" onClick={() => this.closeMenu()}>
-            Restauration
+            RESTAURATION
           </Link>
           <Link to="/hebergement" onClick={() => this.closeMenu()}>
-            Hébergement
+            HEBERGEMENT
           </Link>
           <Link to="/billeterie" onClick={() => this.closeMenu()}>
-            Billeterie
+            BILLETS
           </Link>
           <Link to="/contact" onClick={() => this.closeMenu()}>
-            Contact
+            CONTACT
           </Link>
           <Link to="/info" onClick={() => this.closeMenu()}>
-            Info-Pratiques
+            INFO-PRATIQUES
           </Link>
         </Menu>
       </div>
