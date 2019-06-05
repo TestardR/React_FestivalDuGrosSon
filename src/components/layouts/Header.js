@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
-import './Header.css';
+import logo from '../../static/images/logo.svg';
 
 class Header extends Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="">
+      <div className="headerWrapper">
         <Menu
           isOpen={this.state.menuOpen}
           onStateChange={state => this.handleStateChange(state)}
@@ -54,6 +54,7 @@ class Header extends Component {
             INFO-PRATIQUES
           </Link>
         </Menu>
+        <div className="headerLogo">LOGO</div>
       </div>
     );
   }
