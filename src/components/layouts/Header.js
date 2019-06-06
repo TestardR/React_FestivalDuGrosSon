@@ -45,6 +45,7 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+        <div className="headerLogo">LOGO</div>
       </MediaQuery>
 
       <MediaQuery query="(max-device-width: 768px)">
