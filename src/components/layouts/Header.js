@@ -1,62 +1,57 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { slide as Menu } from 'react-burger-menu';
 
-class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      menuOpen: false
-    };
-  }
-  // This keeps your state in sync with the opening/closing of the menu
-  // via the default means, e.g. clicking the X, pressing the ESC key etc.
-  handleStateChange(state) {
-    this.setState({ menuOpen: state.isOpen });
-  }
+import MediaQuery from 'react-responsive';
+import HeaderBurger from './HeaderBurger';
 
-  // This can be used to close the menu, e.g. when a user clicks a menu item
-  closeMenu() {
-    this.setState(state => ({ menuOpen: !state.menuOpen }));
-  }
+const Header = () => {
+  return (
+    <div>
+      <MediaQuery query="(min-device-width: 769px)">
+        <ul className="headerMenu">
+          <li>
+            <Link className="headerItem" to="/">
+              ACCUEIL
+            </Link>
+          </li>
+          <li>
+            <Link className="headerItem" to="/lineup">
+              LINE-UP
+            </Link>
+          </li>
+          <li>
+            <Link className="headerItem" to="/restauration">
+              RESTAURATION
+            </Link>
+          </li>
+          <li>
+            <Link className="headerItem" to="/hebergement">
+              HEBERGEMENT
+            </Link>
+          </li>
+          <li>
+            <Link className="headerItem" to="/billeterie">
+              BILLETS
+            </Link>
+          </li>
+          <li>
+            <Link className="headerItem" to="/contact">
+              CONTACT
+            </Link>
+          </li>
+          <li>
+            <Link className="headerItem" to="/info">
+              INFO-PRATIQUE
+            </Link>
+          </li>
+        </ul>
+      </MediaQuery>
 
-  showSettings(event) {
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <div className="headerWrapper">
-        <Menu
-          isOpen={this.state.menuOpen}
-          onStateChange={state => this.handleStateChange(state)}
-        >
-          <Link className="menu-item" to="/" onClick={() => this.closeMenu()}>
-            ACCUEIL
-          </Link>
-          <Link to="/lineup" onClick={() => this.closeMenu()}>
-            LINE-UP
-          </Link>
-          <Link to="/restauration" onClick={() => this.closeMenu()}>
-            RESTAURATION
-          </Link>
-          <Link to="/hebergement" onClick={() => this.closeMenu()}>
-            HEBERGEMENT
-          </Link>
-          <Link to="/billeterie" onClick={() => this.closeMenu()}>
-            BILLETS
-          </Link>
-          <Link to="/contact" onClick={() => this.closeMenu()}>
-            CONTACT
-          </Link>
-          <Link to="/info" onClick={() => this.closeMenu()}>
-            INFO-PRATIQUES
-          </Link>
-        </Menu>
-        <div className="headerLogo">LOGO</div>
-      </div>
-    );
-  }
-}
+      <MediaQuery query="(max-device-width: 768px)">
+        <HeaderBurger />
+      </MediaQuery>
+    </div>
+  );
+};
 
 export default Header;
