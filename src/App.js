@@ -14,6 +14,7 @@ function App() {
   return (
     <Router>
       <Header />
+      <Footer />
       <Route exact path="/" component={Home} />
       <Route exact path="/lineup" component={LineUp} />
       <Route exact path="/restauration" component={Restauration} />

@@ -1,0 +1,24 @@
+.footerWrapper {
+  position: absolute;
+  top: 85%;
+  left: 32%;
+  display: flex;
+  @media only screen and (max-width: 768px) {
+    left: 12%;
+  }
+}
+
+.footerItem {
+  flex: 1;
+  cursor: pointer;
+  font-size: 4rem;
+  margin: 0 2rem 0 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover {
+    color: rgba(240, 176, 166, 0.6);
+  }
+  @media only screen and (max-width: 768px) {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 2rem;
+  }
+}
