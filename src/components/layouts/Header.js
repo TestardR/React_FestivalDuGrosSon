@@ -11,12 +11,12 @@ const Header = () => {
         <div className="headerWrapper">
           <ul className="headerMenu">
             <li>
-              <Link className="headerItem" to="/">
+              <Link className="headerItem" id="headerItem1" to="/">
                 ACCUEIL
               </Link>
             </li>
             <li>
-              <Link className="headerItem" to="/lineup">
+              <Link className="headerItem" id="headerItem2" to="/lineup">
                 LINE-UP
               </Link>
             </li>
@@ -31,12 +31,12 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="headerItem" to="/billeterie">
+              <Link className="headerItem" id="headerItem3" to="/billeterie">
                 BILLETS
               </Link>
             </li>
             <li>
-              <Link className="headerItem" to="/contact">
+              <Link className="headerItem" id="headerItem4" to="/contact">
                 CONTACT
               </Link>
             </li>
