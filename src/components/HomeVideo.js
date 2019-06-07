@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Video from '../static/videos/homepage_video.mp4';
 import HomeLogo from './HomeLogo';
-import Lineup from '../static/images/lineup.png';
+import Lineup from '../static/images/lineup2.png';
 
 class HomeVideo extends Component {
   render() {
