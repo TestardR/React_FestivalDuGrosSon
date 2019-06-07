@@ -13,3 +13,27 @@
   src: local('CreteRound'),
     url('../static/fonts/CreteRound-Regular.ttf') format('woff2');
 }
+
+@font-face {
+  font-family: 'MajorMonoDisplay';
+  font-weight: 400;
+  font-style: normal;
+  src: local('MajorMonoDisplay'),
+    url('../static/fonts/MajorMonoDisplay-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'WallPoet';
+  font-weight: 400;
+  font-style: normal;
+  src: local('WallPoet'),
+    url('../static/fonts/Wallpoet-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'MontSerrat';
+  font-weight: 300;
+  font-style: normal;
+  src: local('WallPoet'),
+    url('../static/fonts/Montserrat-Light.ttf') format('woff2');
+}

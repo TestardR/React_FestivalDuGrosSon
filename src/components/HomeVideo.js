@@ -7,9 +7,9 @@ class HomeVideo extends Component {
     return (
       <div className="homeVideo">
         <HomeLogo />
-        <video loop autoPlay>
+        {/*        <video loop autoPlay>
           <source src={Video} type="video/mp4" />
-        </video>
+</video>*/}
       </div>
     );
   }

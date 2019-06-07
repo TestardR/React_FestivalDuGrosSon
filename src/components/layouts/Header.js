@@ -8,44 +8,46 @@ const Header = () => {
   return (
     <div>
       <MediaQuery query="(min-device-width: 769px)">
-        <ul className="headerMenu">
-          <li>
-            <Link className="headerItem" to="/">
-              ACCUEIL
-            </Link>
-          </li>
-          <li>
-            <Link className="headerItem" to="/lineup">
-              LINE-UP
-            </Link>
-          </li>
-          <li>
-            <Link className="headerItem" to="/restauration">
-              RESTAURATION
-            </Link>
-          </li>
-          <li>
-            <Link className="headerItem" to="/hebergement">
-              HEBERGEMENT
-            </Link>
-          </li>
-          <li>
-            <Link className="headerItem" to="/billeterie">
-              BILLETS
-            </Link>
-          </li>
-          <li>
-            <Link className="headerItem" to="/contact">
-              CONTACT
-            </Link>
-          </li>
-          <li>
-            <Link className="headerItem" to="/info">
-              INFO-PRATIQUE
-            </Link>
-          </li>
-        </ul>
-        <div className="headerLogo">LOGO</div>
+        <div className="headerWrapper">
+          <ul className="headerMenu">
+            <li>
+              <Link className="headerItem" to="/">
+                ACCUEIL
+              </Link>
+            </li>
+            <li>
+              <Link className="headerItem" to="/lineup">
+                LINE-UP
+              </Link>
+            </li>
+            <li>
+              <Link className="headerItem" to="/restauration">
+                RESTAURATION
+              </Link>
+            </li>
+            <li>
+              <Link className="headerItem" to="/hebergement">
+                HEBERGEMENT
+              </Link>
+            </li>
+            <li>
+              <Link className="headerItem" to="/billeterie">
+                BILLETS
+              </Link>
+            </li>
+            <li>
+              <Link className="headerItem" to="/contact">
+                CONTACT
+              </Link>
+            </li>
+            <li>
+              <Link className="headerItem" to="/info">
+                INFO-PRATIQUE
+              </Link>
+            </li>
+          </ul>
+          <div className="headerLogo">K-MAGRA</div>
+        </div>
       </MediaQuery>
 
       <MediaQuery query="(max-device-width: 768px)">

@@ -52,7 +52,7 @@ export default class HeaderBurger extends Component {
             INFO-PRATIQUES
           </Link>
         </Menu>
-        <div className="headerLogo">LOGO</div>
+        <div className="headerLogo">K-MAGRA</div>
       </div>
     );
   }

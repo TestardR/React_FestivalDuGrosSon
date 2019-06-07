@@ -4,9 +4,9 @@ import HomeLogo from './HomeLogo';
 
 const HomeImage = () => {
   return (
-    <div>
+    <div className="homeImage">
       <HomeLogo />
-      <img alt="Landscape" src={Landscape} className="homeImage" />
+      {/*      <img alt="Landscape" src={Landscape} className="homeImage" />*/}
     </div>
   );
 };
