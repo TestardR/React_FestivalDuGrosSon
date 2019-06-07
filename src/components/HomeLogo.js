@@ -3,13 +3,19 @@ import React from 'react';
 const HomeLogo = () => {
   return (
     <div className="homeLogo">
-      <div className="title">{`FesTiVAL 
+      <div className="title">
+        <span>{`FesTiVAL 
         du
-        GRAUX soN`}</div>
-      <div className="edition info">2nd edition</div>
+        GRAUX soN`}</span>
+      </div>
+      <div className="edition info">
+        <span>2nd edition</span>
+      </div>
       <div className="info">
-        {`October 11-12-13, 2019
+        <span>
+          {`October 11-12-13, 2019
         Tournai, Belgique`}
+        </span>
       </div>
     </div>
   );

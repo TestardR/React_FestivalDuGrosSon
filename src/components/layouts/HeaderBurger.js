@@ -49,7 +49,7 @@ export default class HeaderBurger extends Component {
             CONTACT
           </Link>
           <Link to="/info" onClick={() => this.closeMenu()}>
-            INFO-PRATIQUES
+            INFO-PRATIQUE
           </Link>
         </Menu>
         <div className="headerLogo">K-MAGRA</div>
