@@ -3,6 +3,7 @@ import MediaQuery from 'react-responsive';
 
 import HomeVideo from './HomeVideo';
 import HomeImage from './HomeImage';
+import Footer from './layouts/Footer';
 
 class Home extends Component {
   render() {
@@ -14,6 +15,7 @@ class Home extends Component {
         <MediaQuery query="(max-device-width: 768px)">
           <HomeImage />
         </MediaQuery>
+        <Footer />
       </div>
     );
   }
