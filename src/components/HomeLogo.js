@@ -4,7 +4,7 @@ const HomeLogo = () => {
   return (
     <div className="homeLogo">
       <div className="title">
-        <span>{`FesTiVAL 
+        <span>{`FesTiVAL
         du
         GRAUX soN`}</span>
       </div>
