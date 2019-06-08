@@ -11,7 +11,7 @@ class HomeVideo extends Component {
         {/*        <video loop autoPlay>
           <source src={Video} type="video/mp4" />
 </video>*/}
-        <img alt="Landscape" src={HomeImage} className="homeImage" />
+        {/*<img alt="Landscape" src={HomeImage} className="homeImage" />*/}
       </div>
     );
   }

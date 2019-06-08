@@ -11,7 +11,7 @@ import Header from './components/layouts/Header';
 
 function App() {
   return (
-    <Router>
+    <Router className="appBackground">
       <Header />
       <Route exact path="/" component={Home} />
       <Route exact path="/lineup" component={LineUp} />

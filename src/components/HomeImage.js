@@ -8,7 +8,7 @@ const HomeImage = () => {
     <div className="homeImage">
       <HomeLogo />
       {/*      <img alt="Landscape" src={Landscape} className="homeImage" />*/}
-      <img alt="Landscape" src={HomeImageMobile} className="homeImage" />
+      {<img alt="Landscape" src={HomeImageMobile} className="homeImage" />}
     </div>
   );
 };
